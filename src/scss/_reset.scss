@@ -123,6 +123,9 @@ table {
   border-spacing: 0;
 }
 
-* {
+*,
+html,
+body {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
