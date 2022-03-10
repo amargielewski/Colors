@@ -1,23 +1,25 @@
 @import "../../scss/colors";
 @import "../../scss/typography";
 
-.footer-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  border-top: 1px solid lightgray;
-}
+.footer {
+  &-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid lightgray;
+  }
 
-.footer-link {
-  padding: 10px 0;
-  text-decoration: none;
-  font-size: $fontSize_L;
-  color: $text_primary;
-  display: flex;
-  align-items: center;
-  gap: 0 10px;
-}
+  &-link {
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: $fontSize_L;
+    color: $text_primary;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
 
-.footer-link-text {
-  font-size: $fontSize_M;
+    &-text {
+      font-size: $fontSize_M;
+    }
+  }
 }
