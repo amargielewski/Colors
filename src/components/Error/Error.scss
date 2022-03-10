@@ -1,0 +1,15 @@
+@import "scss/colors";
+@import "scss/typography";
+
+.error {
+  width: 100%;
+  position: relative;
+
+  &-text {
+    position: absolute;
+    font-size: $fontSize_XS;
+    font-weight: $fontWeight_medium;
+    bottom: -22px;
+    color: $error;
+  }
+}

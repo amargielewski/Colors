@@ -1,18 +1,19 @@
 @import "../../scss/colors";
+@import "../../scss/typography";
 
 .button {
-  border: none;
   background-color: transparent;
   cursor: pointer;
-  font-size: 20px;
-  font-weight: 500;
-  color: ($text_primary);
-  border: 1px solid ($text_primary);
+  font-size: $fontSize_M;
+  font-weight: $fontWeight_semiBold;
+  color: $text_primary;
+  border: 1px solid $text_primary;
   padding: 8px 0;
   transition: 0.3s ease-in;
 
   &:hover {
-    background-color: ($text_primary);
-    color: ($background_primary);
+    border: 1px solid transparent;
+    background-color: $text_primary__transparent;
+    color: $background_primary;
   }
 }

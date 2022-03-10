@@ -1,13 +1,25 @@
 @import "../../scss/colors";
-.label-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px 0;
-}
+@import "../../scss/typography";
 
-.label-text {
-  font-size: 20px;
-  font-weight: 500;
-  color: ($text_primary);
+.label {
+  &-wrapper {
+    display: flex;
+
+    &-column {
+      flex-direction: column;
+      gap: 10px 0;
+    }
+
+    &-row {
+      flex-direction: row;
+      align-items: center;
+      gap: 0 10px;
+    }
+  }
+
+  &-text {
+    font-size: ($fontSize_M);
+    font-weight: ($fontWeight_medium);
+    color: ($text_primary);
+  }
 }

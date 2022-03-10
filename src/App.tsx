@@ -1,13 +1,14 @@
-import React from "react";
 import "./App.scss";
-import { Input } from "components/Input/Input";
 
-function App() {
+import { MainLayout } from "layouts/Main/MainLayout";
+import { MainPage } from "pages/Main/MainPage";
+
+const App = () => {
   return (
-    <div className="App">
-      <Input />
-    </div>
+    <MainLayout>
+      <MainPage />
+    </MainLayout>
   );
-}
+};
 
 export default App;

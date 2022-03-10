@@ -1,9 +1,14 @@
 @import "../../scss/colors";
+@import "../../scss/typography";
 
 .input {
   outline: none;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: $fontSize_M;
+  font-weight: $fontWeight_medium;
   padding: 5px 15px;
-  color: ($text_secondary);
+  color: $text_secondary;
+
+  ::placeholder {
+    font-size: $fontSize_S;
+  }
 }
