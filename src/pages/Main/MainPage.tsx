@@ -44,7 +44,7 @@ export const MainPage = () => {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     if (value && !checkIsHashFirst(value)) return;
-    if (value.length > 13) return setError("max 13");
+    if (value.length > 13) return setError("No longer than 13 characters");
     else setError("");
 
     setColorValue(e.target.value);
@@ -55,7 +55,8 @@ export const MainPage = () => {
     const isRGB = checkIsRGB(colorValue);
     const isHEX = checkIsHEX(colorValue);
 
-    if (!isRGB && !isHEX) return setError("Error");
+    if (!isRGB && !isHEX)
+      return setError("Invalid Color Format must be RGB or HEX");
     else setError("");
 
     const newColor: Color = {
